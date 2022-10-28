@@ -1,0 +1,27 @@
+{
+	"name": "contract-creator",
+	"version": "1.0.0",
+	"description": "This is a Node CLI app to create equity symbols that should then be added to a thinkorswim watchlist/symbol lookup frame.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"server": "nodemon index.js",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Jamelle-Boose/contract-creator.git"
+	},
+	"author": "Jamelle-Boose",
+	"license": "Unlicense",
+	"bugs": {
+		"url": "https://github.com/Jamelle-Boose/contract-creator/issues"
+	},
+	"homepage": "https://github.com/Jamelle-Boose/contract-creator#readme",
+	"dependencies": {
+		"inquirer": "^9.1.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	}
+}
