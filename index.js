@@ -64,7 +64,8 @@ const main = async () => {
     { length: (endPosition - startPosition) / increment + 1 },
     (_, i) => `${newEquity}${startPosition + i * increment}`
   )
-  clipboard.writeSync(`${contracts.join(" ")}`)
+  await clipboard.write(`${contracts.join(" ")}`)
+  console.log(`Copied to clipboard: ${contracts.join(" ")}`)
 }
 
 main()
