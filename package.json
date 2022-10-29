@@ -4,6 +4,7 @@
 	"description": "This is a Node CLI app to create equity symbols that should then be added to a thinkorswim watchlist/symbol lookup frame.",
 	"main": "index.js",
 	"type": "module",
+	"bin": "./index.js",
 	"scripts": {
 		"server": "nodemon index.js",
 		"test": "jest"
