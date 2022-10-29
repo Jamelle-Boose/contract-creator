@@ -20,6 +20,7 @@
 	},
 	"homepage": "https://github.com/Jamelle-Boose/contract-creator#readme",
 	"dependencies": {
+		"clipboardy": "^3.0.0",
 		"inquirer": "^9.1.4"
 	},
 	"devDependencies": {

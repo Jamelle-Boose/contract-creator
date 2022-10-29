@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import inquirer from "inquirer"
+import clipboard from "clipboardy"
 
 const main = async () => {
   const question = [
@@ -63,7 +64,7 @@ const main = async () => {
     { length: (endPosition - startPosition) / increment + 1 },
     (_, i) => `${newEquity}${startPosition + i * increment}`
   )
-  console.log(contracts)
+  clipboard.writeSync(`${contracts.join(" ")}`)
 }
 
 main()
