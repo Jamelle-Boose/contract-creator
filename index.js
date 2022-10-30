@@ -67,7 +67,9 @@ const main = async () => {
   )
   await clipboard.write(`${contracts.join(" ")}`)
   console.log(
-    `\n${chalk.yellow(`Copied to clipboard:`)}\n\n${contracts.join(" ")}\n`
+    `\n${chalk.yellow(`Copied to clipboard:`)}\n\n${chalk.gray(
+      contracts.join("\n")
+    )}\n`
   )
 }
 
