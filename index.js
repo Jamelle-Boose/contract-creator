@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import inquirer from "inquirer"
+import chalk from "chalk"
 import clipboard from "clipboardy"
 
 const main = async () => {
@@ -65,7 +66,10 @@ const main = async () => {
     (_, i) => `${newEquity}${startPosition + i * increment}`
   )
   await clipboard.write(`${contracts.join(" ")}`)
-  console.log(`Copied to clipboard: ${contracts.join(" ")}`)
+  //TODO style message to user that it has been copied to clipboard
+  console.log(
+    `\n${chalk.yellow(`Copied to clipboard:`)}\n\n${contracts.join(" ")}\n`
+  )
 }
 
 main()
