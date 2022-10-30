@@ -66,7 +66,6 @@ const main = async () => {
     (_, i) => `${newEquity}${startPosition + i * increment}`
   )
   await clipboard.write(`${contracts.join(" ")}`)
-  //TODO style message to user that it has been copied to clipboard
   console.log(
     `\n${chalk.yellow(`Copied to clipboard:`)}\n\n${contracts.join(" ")}\n`
   )
