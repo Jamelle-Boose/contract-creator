@@ -17,12 +17,12 @@ const main = async () => {
       message: "Year?",
     },
     {
-      type: "number",
+      type: "input",
       name: "month",
       message: "Month?",
     },
     {
-      type: "number",
+      type: "input",
       name: "day",
       message: "Day?",
     },
