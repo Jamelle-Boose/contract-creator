@@ -19,8 +19,8 @@ const mainMenu = async () => {
       choices: ["Create contract", "Exit"],
     },
   ]
-  log.welcome()
   try {
+    log.welcome()
     const answer = await inquirer.prompt(question)
     switch (answer.mainMenu) {
       case "Create contract":
@@ -82,7 +82,6 @@ const createContract = async () => {
   ]
 
   try {
-    const answer = await inquirer.prompt(question)
     const {
       equity,
       year,
@@ -92,7 +91,7 @@ const createContract = async () => {
       startPosition,
       endPosition,
       increment,
-    } = answer
+    } = await inquirer.prompt(question)
     const newEquity = `.${equity.toUpperCase()}${year}${month}${day}${direction}`
     const contracts = Array.from(
       { length: (endPosition - startPosition) / increment + 1 },
