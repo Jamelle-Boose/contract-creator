@@ -2,11 +2,12 @@
 	"name": "contract-creator",
 	"version": "1.0.0",
 	"description": "This is a Node CLI app to create equity symbols that should then be added to a thinkorswim watchlist/symbol lookup frame.",
-	"main": "index.js",
+	"main": "server.js",
 	"type": "module",
-	"bin": "./index.js",
+	"bin": "./server.js",
 	"scripts": {
-		"server": "nodemon index.js",
+		"start": "node .",
+		"server": "nodemon server.js",
 		"test": "jest"
 	},
 	"repository": {
